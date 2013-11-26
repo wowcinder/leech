@@ -380,13 +380,4 @@
 
 	</dependencyManagement>
 
-	<modules>
-		<module>../leech-common</module>
-		<module>../leech-hibernate-listener-support</module>
-		<module>../leech-util-classscaner</module>
-		<module>../leech-shared</module>
-		<module>../leech-gwt-server</module>
-		<module>../leech-gwt-ui</module>
-		<module>../leech-service</module>
-	</modules>
 </project>
