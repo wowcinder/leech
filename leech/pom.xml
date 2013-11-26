@@ -5,12 +5,12 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
-  	<module>../../git/leech/leech-common</module>
-  	<module>../../git/leech/leech-gwt-server</module>
-  	<module>../../git/leech/leech-gwt-ui</module>
-  	<module>../../git/leech/leech-hibernate-listener-support</module>
-  	<module>../../git/leech/leech-service</module>
-  	<module>../../git/leech/leech-shared</module>
-  	<module>../../git/leech/leech-util-classscaner</module>
+  	<module>../leech-common</module>
+  	<module>../leech-gwt-server</module>
+  	<module>../leech-gwt-ui</module>
+  	<module>../leech-hibernate-listener-support</module>
+  	<module>../leech-service</module>
+  	<module>../leech-shared</module>
+  	<module>../leech-util-classscaner</module>
   </modules>
 </project>
