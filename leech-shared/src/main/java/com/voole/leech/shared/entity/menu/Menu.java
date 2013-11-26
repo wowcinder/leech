@@ -19,7 +19,7 @@ import com.voole.leech.shared.entity.authorize.Authorize;
  */
 @Entity
 @Table(name = "menu")
-public class Menu extends MenuNode {
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)public class Menu extends MenuNode {
 	private static final long serialVersionUID = -7971390347504825311L;
 
 	private String token;

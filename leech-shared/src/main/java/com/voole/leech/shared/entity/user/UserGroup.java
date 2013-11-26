@@ -27,7 +27,7 @@ import com.voole.leech.shared.entity.authorize.Authorize;
  */
 @Entity
 @Table(name = "user_group")
-public class UserGroup extends EntityWithCreateTimeAndAutoIncreaseId implements
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)public class UserGroup extends EntityWithCreateTimeAndAutoIncreaseId implements
 		Serializable {
 	private static final long serialVersionUID = 6538171186264110989L;
 	private String name;

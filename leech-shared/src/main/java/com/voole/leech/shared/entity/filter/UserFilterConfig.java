@@ -23,6 +23,7 @@ import com.voole.leech.shared.entity.user.User;
 @Entity
 @Table(name = "user_filter_config", uniqueConstraints = { @UniqueConstraint(columnNames = {
 		"user_id", "table_id" }) })
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)
 public class UserFilterConfig extends EntityWithCreateTimeAndAutoIncreaseId {
 	private static final long serialVersionUID = 4156608013660607122L;
 	private User user;

@@ -20,7 +20,7 @@ import com.voole.leech.hbasemeta.shared.entity.base.HbaseTableColumn;
  */
 @Entity
 @Table(name = "hbase_filter_base")
-public class EtlFilterBase extends EtlFilter {
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)public class EtlFilterBase extends EtlFilter {
 	private static final long serialVersionUID = 6184651889287879034L;
 	private HbaseTableColumn column;
 	private EtlFilterBaseOp operator;

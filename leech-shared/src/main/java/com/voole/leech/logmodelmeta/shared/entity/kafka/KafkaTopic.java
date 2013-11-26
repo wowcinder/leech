@@ -26,7 +26,7 @@ import com.voole.leech.common.shared.entity.createtime.EntityWithCreateTimeAndAu
  */
 @Entity
 @Table(name = "kafka_topic")
-@Inheritance(strategy = InheritanceType.JOINED)
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)@Inheritance(strategy = InheritanceType.JOINED)
 public class KafkaTopic extends EntityWithCreateTimeAndAutoIncreaseId {
 	private static final long serialVersionUID = -7632761348362494932L;
 	private String name;

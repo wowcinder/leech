@@ -15,7 +15,7 @@ import com.voole.leech.logmodelmeta.shared.entity.LogModelVersion;
  */
 @Entity
 @Table(name = "kafka_topic_fixed_model_version")
-public class KafkaTopicFixedModelVersion extends KafkaTopic {
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)public class KafkaTopicFixedModelVersion extends KafkaTopic {
 	private static final long serialVersionUID = -2542549323037087469L;
 	private LogModelVersion<?> version;
 

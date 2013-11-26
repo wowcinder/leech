@@ -30,7 +30,7 @@ import com.voole.leech.shared.entity.filter.UserFilterConfig;
  */
 @Entity
 @Table(name = "user")
-public class User extends PasswordPersistenceWithCreateTime implements
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)public class User extends PasswordPersistenceWithCreateTime implements
 		Serializable, PasswordPersistence {
 	private static final long serialVersionUID = -1801720788002068921L;
 

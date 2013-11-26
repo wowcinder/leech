@@ -16,7 +16,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "menu_group")
-public class MenuGroup extends MenuNode {
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)public class MenuGroup extends MenuNode {
 	private static final long serialVersionUID = 2138324039371528785L;
 	
 	private List<MenuNode> nodes;

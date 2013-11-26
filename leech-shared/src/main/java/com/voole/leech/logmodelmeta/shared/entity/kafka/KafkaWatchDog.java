@@ -23,7 +23,7 @@ import com.voole.leech.common.shared.entity.createtime.EntityWithCreateTimeAndAu
  */
 @Entity
 @Table(name = "kafka_watch_dog")
-@org.hibernate.annotations.Entity(dynamicUpdate = true)
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)
 public class KafkaWatchDog extends EntityWithCreateTimeAndAutoIncreaseId {
 	private static final long serialVersionUID = -6405171995643782865L;
 	private String ip;

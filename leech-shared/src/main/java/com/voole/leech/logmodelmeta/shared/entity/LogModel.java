@@ -16,7 +16,7 @@ import com.voole.leech.common.shared.entity.createtime.EntityWithCreateTimeAndAu
 
 @Entity
 @Table(name = "log_model")
-@Inheritance(strategy = InheritanceType.JOINED)
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class LogModel<Version extends LogModelVersion<?>> extends
 		EntityWithCreateTimeAndAutoIncreaseId {
 	private static final long serialVersionUID = 5087339932449259266L;

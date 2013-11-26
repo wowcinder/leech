@@ -11,7 +11,7 @@ import com.voole.leech.logmodelmeta.shared.entity.LogModelVersion;
 
 @Entity
 @Table(name = "log_model_version_json")
-public class JsonLogModelVersion extends LogModelVersion<JsonLogModel> {
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)public class JsonLogModelVersion extends LogModelVersion<JsonLogModel> {
 	private static final long serialVersionUID = 2719663842833442034L;
 	private JsonLogModelGroupColumn rootNode;
 

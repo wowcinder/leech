@@ -13,7 +13,7 @@ import com.voole.leech.hbasemeta.shared.entity.base.HbaseTableVersion;
 
 @Entity
 @Table(name = "log_model_group_column_c")
-public class CTypeLogModelGroupColumn extends CTypeLogModelColumn {
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)public class CTypeLogModelGroupColumn extends CTypeLogModelColumn {
 	private static final long serialVersionUID = 1424230533361555956L;
 	private List<CTypeLogModelColumn> columns;
 	private HbaseTableVersion hbaseTableVersion;

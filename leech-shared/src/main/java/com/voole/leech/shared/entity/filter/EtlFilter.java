@@ -17,7 +17,7 @@ import com.voole.leech.common.shared.entity.createtime.EntityWithCreateTimeAndAu
  */
 @Entity
 @Table(name = "hbase_filter")
-@Inheritance(strategy = InheritanceType.JOINED)
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)@Inheritance(strategy = InheritanceType.JOINED)
 public class EtlFilter extends EntityWithCreateTimeAndAutoIncreaseId {
 	private static final long serialVersionUID = 1L;
 	private EtlFilterList list;

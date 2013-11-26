@@ -20,7 +20,7 @@ import javax.validation.constraints.NotNull;
  */
 @Entity
 @Table(name = "hbase_filter_list")
-public class EtlFilterList extends EtlFilter {
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)public class EtlFilterList extends EtlFilter {
 	private static final long serialVersionUID = 1723117033826601200L;
 
 	public static enum EtlFilterListOp {

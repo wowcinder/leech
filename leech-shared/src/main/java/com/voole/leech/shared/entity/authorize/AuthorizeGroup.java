@@ -22,7 +22,7 @@ import com.voole.leech.common.shared.entity.createtime.EntityWithCreateTimeAndAu
  * @date 2013年8月2日
  */
 @Table(name = "authorize_group")
-@Entity
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)@Entity
 public class AuthorizeGroup extends EntityWithCreateTimeAndAutoIncreaseId
 		implements Serializable {
 

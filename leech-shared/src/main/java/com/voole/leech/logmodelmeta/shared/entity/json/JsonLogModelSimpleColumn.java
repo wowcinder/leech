@@ -9,7 +9,7 @@ import com.voole.leech.hbasemeta.shared.entity.base.HbaseTableColumn;
 
 @Entity
 @Table(name = "log_model_simple_column_json")
-public class JsonLogModelSimpleColumn extends JsonLogModelColumn {
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)public class JsonLogModelSimpleColumn extends JsonLogModelColumn {
 
 	private static final long serialVersionUID = -5597434068603255025L;
 	private HbaseTableColumn hbaseTableColumn;

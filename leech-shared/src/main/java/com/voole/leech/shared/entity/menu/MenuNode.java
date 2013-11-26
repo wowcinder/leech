@@ -22,7 +22,7 @@ import com.voole.leech.common.shared.entity.createtime.EntityWithCreateTimeAndAu
  */
 @Entity
 @Table(name = "menu_node")
-@Inheritance(strategy = InheritanceType.JOINED)
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)@Inheritance(strategy = InheritanceType.JOINED)
 public class MenuNode extends EntityWithCreateTimeAndAutoIncreaseId implements
 		Serializable {
 	private static final long serialVersionUID = -692226783023465869L;
